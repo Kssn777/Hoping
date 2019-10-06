@@ -12,7 +12,6 @@ server_socket.bind((args.host,args.port))
 server_socket.listen(5)
 dic={}#储存key-value对
 key_list=[]#储存各种key
-#new_socket_list=[]
 def catch(url):#用来把数据写入文件
     r=requests.get(url)
     with open('result','wb') as f:
